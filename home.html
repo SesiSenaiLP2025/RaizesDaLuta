@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Raízes da Luta</title>
+		<link rel="stylesheet" type="text/css" href="home_estilo.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<link rel="icon" type="image/x-icon" href="loguinho_sem_fundo.png" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body{
+				font-family: Arial, sans-serif;
+			}
+			.alto-contraste{
+				background-color: black;
+				color: yellow;
+			}
+			button {
+			padding: 10px 20px;
+			margin-top: 10px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			font-size: 16px;
+			background-color: #ffe08a;
+			transition: 0.3s;
+		}
+		.modo-leitura{
+			line-height: 1.8;
+			background-color: #f4f4f4;
+			color: #333;
+		}
+		.aumentar-fonte{
+			font-size: 1.2em;
+		}
+		.diminuir-fonte{
+			font-size: 1em;
+		}
+		:focus{
+			outline: 3px solid yellow;
+		}
+		</style>
+	</head>
+	<header>
+	<nav class="cabecalho">
+			<div class="container-imagem">
+				<img class="esquerda" id="logo" src="logo.png">
+			</div>
+			<br/>
+		<div class="menu">
+			<ul>
+				<li class="li"><a class="link" href="home.html"><b id="t15"> Home </b></a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn"><b id="t16">Sobre o Livro <i class="fa-solid fa-arrow-down"></i></b></a>
+					<div class="dropdown-content">
+					<a href="sobre_livro.html" ><b id="t17">Resenha</b></a>
+					<a href="criticas.html" ><b id="t18">Críticas</b></a>
+					</div>
+				</li>
+				<li class="li"><a class="link" href="autora.html" ><b id="t19"> Sobre a Autora</b></a></li>
+				<li class="li"><a class="link" href="sobre_nos.html" ><b id="t20"> Sobre nós</b></a></li>
+				<li class="li"><a class="link" href="vest.html" ><b id="t21"> Vestibular</b></a></li>
+				<li class="li"><a class="link" href="quiz.html" ><b id="t22">Quiz</b></a></li>
+				<li class="li"><a class="link" href="https://cogetes.epsjv.fiocruz.br/storage/ANEXO_SOCIOLOGIA_2%C2%BAANO_PEQUENO_MANUAL_ANTIRRACISTA_RIBEIRO_DJAMILA-v_5f0659881d9e4.pdf" target="_blank" ><b id="t23"> PDF </b></a></li>
+				
+			</ul>
+		</div>
+		<br/><br/>
+		</nav>
+		</header>
+		<img id="img_menu" src="dd.png" style="clear:both">
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/> 
+	<body>
+		<div class="card">
+				<h2 class="text" id="t1">Nosso Propósito</h2>
+				<br/>
+				<p class="text" id="t2">O objetivo do Raízes da Luta para você, caro leitor, é espalhar o conhecimento e incentivar a reflexão sobre o racismo estrutural a partir do livro Pequeno Manual Antirracista, de Djamila Ribeiro. Por meio de análises, resumos e discussões, buscamos ampliar o entendimento sobre as desigualdades raciais e estimular a prática antirracista no cotidiano.</p>
+				<br/>
+				<p class="text" id="t3">Além de explorar os conceitos abordados na obra, o site oferece promover o pensamento crítico e disponibiliza referências complementares para aprofundamento no tema. Acreditamos que a educação e o diálogo são ferramentas essenciais para a construção de uma sociedade mais justa e igualitária. </p>
+				<br/>
+				<p class="text" id="t4">Nosso compromisso é proporcionar um espaço acessível e informativo, onde cada visitante possa encontrar materiais que contribuam para uma transformação social, como também educativa, consciente e ativa. </p>
+				<br/>
+		</div>
+		<br/><br/><br/><br/>
+		<img class="raizes" src="logo.png">
+		<br/><br/><br/><br/>
+		<img class="livro" src="livro3.webp">
+		<br/><br/><br/><br/><br/>
+		<div>
+		<br/><br/><br/>
+		<img class="banner" src="123.png">
+		</div>
+		<div class="cardd">
+				<h2 class="text" id="t5">Importância do livro</h2>
+				<br/><br/>
+				<p class="text" id="t6">O livro Pequeno Manual Antirracista, de Djamila Ribeiro, é uma obra essencial para compreender o racismo estrutural e adotar uma postura ativa contra ele. Com uma linguagem acessível e capítulos curtos, a autora conscientiza sobre privilégios, desigualdades históricas e formas de discriminação no Brasil.</p>
+				<br/><br/>
+				<p class="text" id="t7">Além de explicar o problema, o livro propõe ações práticas para uma atitude antirracista, como a valorização da cultura negra e a solidariedade ativa. Focado na realidade brasileira, ele amplia o debate sobre racismo e incentiva mudanças individuais e coletivas. Sua leitura é fundamental para quem busca uma sociedade mais justa e igualitária.</p>
+				<br/><br/>
+
+				<!--script para tradução-->
+				<script>
+					const traducoes = {
+						"pt":{
+							"t1": "Nosso Propósito",
+							"t2": "O objetivo do Raízes da Luta para você, caro leitor, é espalhar o conhecimento e incentivar a reflexão sobre o racismo estrutural a partir do livro Pequeno Manual Antirracista, de Djamila Ribeiro. Por meio de análises, resumos e discussões, buscamos ampliar o entendimento sobre as desigualdades raciais e estimular a prática antirracista no cotidiano.",
+							"t3": "Além de explorar os conceitos abordados na obra, o site oferece promover o pensamento crítico e disponibiliza referências complementares para aprofundamento no tema. Acreditamos que a educação e o diálogo são ferramentas essenciais para a construção de uma sociedade mais justa e igualitária.",
+							"t4":"Nosso compromisso é proporcionar um espaço acessível e informativo, onde cada visitante possa encontrar materiais que contribuam para uma transformação social, como também educativa, consciente e ativa.",
+							"t5":"Importância do livro",
+							"t6":"O livro Pequeno Manual Antirracista, de Djamila Ribeiro, é uma obra essencial para compreender o racismo estrutural e adotar uma postura ativa contra ele. Com uma linguagem acessível e capítulos curtos, a autora conscientiza sobre privilégios, desigualdades históricas e formas de discriminação no Brasil.",
+							"t7":"Além de explicar o problema, o livro propõe ações práticas para uma atitude antirracista, como a valorização da cultura negra e a solidariedade ativa. Focado na realidade brasileira, ele amplia o debate sobre racismo e incentiva mudanças individuais e coletivas. Sua leitura é fundamental para quem busca uma sociedade mais justa e igualitária.",
+							"t8":"Acessibilidade",
+							"contraste-btn":"Alto Contraste",
+							"modo-leitura-btn":"Modo Leitura",
+							"aumentar-fonte-btn":"Aumentar Fonte",
+							"diminuir-fonte-btn":"Diminuir Fonte",
+							"ler-conteudo-btn":"Ler Conteúdo",
+							"t14":"© SESI/SENAI 2025. Todos os direitos reservados.",
+							"t15":"Home",
+							"t16":"Sobre o Livro",
+							"t17":"Resenha",
+							"t18": "Críticas",
+							"t19":"Sobre a Autora",
+							"t20":"Sobre Nós",
+							"t21":"Vestibular",
+							"t22":"Quiz",
+							"t23":"PDF",
+
+
+						},
+						"en":{
+							"t1": "Our Purpose",
+							"t2": "The goal of Raízes da Luta for you, dear reader, is to spread knowledge and encourage reflection on structural racism through the book A Small Anti-Racist Handbook by Djamila Ribeiro. Through analyses, summaries, and discussions, we aim to broaden the understanding of racial inequalities and promote anti-racist practices in everyday life.",
+							"t3": "In addition to exploring the concepts addressed in the book, the website aims to promote critical thinking and provides complementary references for deeper understanding of the topic. We believe that education and dialogue are essential tools for building a more just and equal society.",
+							"t4": "Our commitment is to provide an accessible and informative space where every visitor can find materials that contribute to social transformation, as well as educational, conscious, and active engagement.",
+							"t5": "Importance of the Book",
+							"t6": "The book A Small Anti-Racist Handbook by Djamila Ribeiro is an essential work for understanding structural racism and adopting an active stance against it. With accessible language and short chapters, the author raises awareness about privilege, historical inequalities, and forms of discrimination in Brazil.",
+							"t7": "In addition to explaining the problem, the book proposes practical actions for adopting an anti-racist attitude, such as valuing Black culture and practicing active solidarity. Focused on the Brazilian reality, it broadens the debate on racism and encourages both individual and collective change. Reading it is essential for anyone seeking a more just and equal society.",
+							"t8": "Accessibility",
+							"contraste-btn":"High Contrast",
+							"modo-leitura-btn":"Reading Mode",
+							"aumentar-fonte-btn":"Increase Font",
+							"diminuir-fonte-btn":"Decrease Font",
+							"ler-conteudo-btn":"Read Content",
+							"t14":"© SESI/SENAI 2025. All rights reserved.",
+							"t15":"Home",
+							"t16":"About the Book",
+							"t17":"Review",
+							"t18": "Reviews",
+							"t19":"About the Author",
+							"t20":"About Us",
+							"t21":"University Entrance Exam",
+							"t22":"Quiz",
+							"t23":"PDF",
+
+						}
+					}
+					function mudarIdioma(idioma){
+						document.getElementById("t1").innerText = traducoes[idioma].t1;
+						document.getElementById("t2").innerText = traducoes[idioma].t2;
+						document.getElementById("t3").innerText = traducoes[idioma].t3;
+						document.getElementById("t4").innerText = traducoes[idioma].t4;
+						document.getElementById("t5").innerText = traducoes[idioma].t5;
+						document.getElementById("t6").innerText = traducoes[idioma].t6;
+						document.getElementById("t7").innerText = traducoes[idioma].t7;
+						document.getElementById("t8").innerText = traducoes[idioma].t8;
+						document.getElementById("contraste-btn").innerText = traducoes[idioma]["contraste-btn"];
+						document.getElementById("modo-leitura-btn").innerText = traducoes[idioma]["modo-leitura-btn"];
+						document.getElementById("aumentar-fonte-btn").innerText = traducoes[idioma]["aumentar-fonte-btn"];
+						document.getElementById("diminuir-fonte-btn").innerText = traducoes[idioma]["diminuir-fonte-btn"];
+						document.getElementById("ler-conteudo-btn").innerText = traducoes[idioma]["ler-conteudo-btn"];
+						document.getElementById("t14").innerText = traducoes[idioma].t14;
+						document.getElementById("t15").innerText = traducoes[idioma].t15;
+						document.getElementById("t16").innerText = traducoes[idioma].t16;
+						document.getElementById("t17").innerText = traducoes[idioma].t17;
+						document.getElementById("t18").innerText = traducoes[idioma].t18;
+						document.getElementById("t19").innerText = traducoes[idioma].t19;
+						document.getElementById("t20").innerText = traducoes[idioma].t20;
+						document.getElementById("t21").innerText = traducoes[idioma].t21;
+						document.getElementById("t22").innerText = traducoes[idioma].t22;
+						document.getElementById("t23").innerText = traducoes[idioma].t23;
+					}
+					</script>
+		</div>
+		<img class="livro1" src="livroo.png">
+		<br/><br/><br/><br/>
+		<!--<h3>Raízes da Luta</h3>
+				<h3>Obra: O pequeno manual antirracista</h3>
+				<h3>Autora: Djamila Ribeiro</h3>
+				<h3></h3>
+				<h4 class="teste">Senai</h4>
+				<h4 id="teste2">Aff</h4>
+				<h4 id="testi">Professora Michele</h4>
+				<label id="labell"></label>
+		<script>
+		var dados = document.getElementsByTagName("h3"); /*getElementBy TagName*/
+		alert(dados[0].textContent);
+		alert(dados[1].textContent);
+		alert(dados[2].textContent);
+		
+		dados[3].innerHTML = "<span style='color:brown'>Matéria: Português</span>"; /*innerHTML*/
+		
+		var classe = document.getElementsByClassName("teste"); /*getElementsByClassName*/
+		alert(classe[0].textContent);
+		var selectorClasse = document.querySelectorAll(".teste"); /*querySelectorAll*/
+		alert("Query Selector All:"+selectorClasse[0]);
+		
+		var selector = document.querySelector(".teste"); /*querySelector*/
+		alert("Query Selector: "+selector.textContent);
+		
+		var dados = document.getElementById("testi").style.color = "blue"; /*documentById + color*/
+		var dados = document.getElementById("testi").style.textAlign = "right"; /*documentById + textAlign*/
+		
+		
+		var novoElemento = document.createElement("p"); /*createElement + appendChild*/
+		novoElemento.textContent = "Parágrafo Novo";
+		novoElemento.id = "p_criado";
+		document.body.appendChild(novoElemento);
+		
+		var elementoRemover = document.getElementById("teste2"); 
+		elementoRemover.parentNode.removeChild(elementoRemover);
+		
+		var novoSpan = document.createElement("span");
+		novoSpan.textContent = "Span Criado";
+		var elementoAntigo = document.getElementById("p_criado");
+		elementoAntigo.parentNode.replaceChild(novoSpan, elementoAntigo);
+		
+		document.write("<br/><br/><img src='https://i.zst.com.br/thumbs/12/1/31/1156782445.jpg' width='20%'>");
+		
+	</script>-->
+	<div class="acessibilidade">
+		<h1 tabindex="0" id="t8">Acessibilidade</h1>
+		<button id="contraste-btn" aria-label="Alterar Contraste" > Alto Contraste</button>
+		<button id="modo-leitura-btn" aria-label="Modo Leitura" > Modo Leitura</button>
+		<button id="aumentar-fonte-btn" aria-label="Aumentar Fonte" > Aumentar Fonte</button>
+		<button id="diminuir-fonte-btn" aria-label="Diminuir Fonte" > Diminuir Fonte</button>
+		<button id="ler-conteudo-btn" aria-label="Ler Conteúdo" > Ler Conteúdo</button>
+		<button onclick="mudarIdioma('en')">English</button>
+		<button onclick="mudarIdioma('pt')">Português</button>
+		<br/><br/>
+	</div>
+	<!--script acessibilidade-->
+	<script>
+	//Alterar o contraste
+	document.getElementById('contraste-btn').addEventListener('click', function(){
+		document.body.classList.toggle('alto-contraste');
+		cards = document.getElementsByClassName('card');
+		for(card of cards){
+			card.classList.toggle('alto-contraste');
+		}
+		cards = document.getElementsByClassName('cardd');
+		for(cardd of cards){
+			cardd.classList.toggle('alto-contraste');
+		}
+		rodapee = document.getElementsByClassName('rodape');
+		for(rodape of rodapee){
+			rodape.classList.toggle('alto-contraste');
+		}
+	});
+	
+	//Modo Leitura
+	document.getElementById('modo-leitura-btn').addEventListener('click', function(){
+		document.body.classList.toggle('modo-leitura');});
+		
+	//Aumentar fonte
+	document.getElementById('aumentar-fonte-btn').addEventListener('click',function(){
+	document.body.classList.add('aumentar-fonte');
+	document.body.classList.remove('diminuir-fonte')
+	;})
+	//Dimniuir Fonte
+	document.getElementById('diminuir-fonte-btn').addEventListener('click',function(){
+	document.body.classList.add('diminuir-fonte');
+	document.body.classList.remove('aumentar-fonte')
+	;})
+	//Ler conteúdo da Página
+	document.getElementById('ler-conteudo-btn').addEventListener('click', function(){
+		const texto = document.body.innerText;
+		const falante = new SpeechSynthesisUtterance(texto);
+		falante.lang = 'pt-BR';
+		falante.volume = 1;
+		falante.rate = 1;
+		falante.pitch = 1;
+		speechSynthesis.speak(falante);
+	});
+	</script>
+	</br></br>
+
+	
+
+	<footer>
+		<div class="rodape">
+			<p><b id="t14">© SESI/SENAI 2025. Todos os direitos reservados.</b></p>
+		</div>
+	</footer>
+	</body>
+</html>

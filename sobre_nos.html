@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Sobre Nós</title>
+		<link rel="stylesheet" type="text/css" href="sobre_nos_estilos.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+		<link rel="icon" type="image/x-icon" href="loguinho_sem_fundo.png" >
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			body{
+				font-family: Arial, sans-serif;
+			}
+			.alto-contraste{
+				background-color: black;
+				color: yellow;
+			}
+			button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            background-color: #ffe08a;
+            transition: 0.3s;
+        }
+		.modo-leitura{
+			line-height: 1.8;
+			background-color: #f4f4f4;
+			color: #333;
+		}
+		.aumentar-fonte{
+			font-size: 1.2em;
+		}
+		.diminuir-fonte{
+			font-size: 1em;
+		}
+		:focus{
+			outline: 3px solid yellow;
+		}
+		</style>
+	</head>
+	<body>
+		<nav class="cabecalho">
+			<div class="container-imagem">
+				<img class="esquerda" id="logo" src="logo.png">
+			</div>
+			<br/>
+		<div class="menu">
+			<ul>
+				<li class="li"><a class="link" href="home.html"><b> Home </b></a></li>
+				<li class="dropdown">
+					<a href="javascript:void(0)" class="dropbtn"><b id="sobre_livro">Sobre o Livro <i class="fa-solid fa-arrow-down"></i></b></a>
+					<div class="dropdown-content">
+					<a href="sobre_livro.html"><b id="resenha">Resenha</b></a>
+					<a href="criticas.html"><b id="criticas">Críticas</b></a>
+					</div>
+				</li>
+				<li class="li"><a class="link" href="autora.html"><b id="autora"> Sobre a Autora</b></a></li>
+				<li class="li"><a class="link" href="sobre_nos.html"><b id="sobre_nos"> Sobre nós</b></a></li>
+				<li class="li"><a class="link" href="vest.html"><b id="vest"> Vestibular</b></a></li>
+				<li class="li"><a class="link" href="quiz.html"><b>Quiz</b></a></li>
+				<li class="li"><a class="link" href="https://cogetes.epsjv.fiocruz.br/storage/ANEXO_SOCIOLOGIA_2%C2%BAANO_PEQUENO_MANUAL_ANTIRRACISTA_RIBEIRO_DJAMILA-v_5f0659881d9e4.pdf" target="_blank"><b> PDF </b></a></li>
+			</ul>
+		</div>
+		<br/><br/>
+		</nav>
+		<img id="img_menu" src="dd.png" style="clear:both">
+		<br/><br/>
+		<h2 class="h2" id="titulo1">Possíveis Atitudes Antirracistas</h2><br/>
+		<!-- From Uiverse.io by Fcodingx --> 
+		<div class="atitude">
+		<div class="card">
+			 <h3 id="h31">Educação e Conscientização <br/><i class="fa-solid fa-arrow-down"></i></h3>
+             <p id="p1">Ler e divulgar obras sobre racismo e história afrodescendente. </p>		 
+			 <p id="p2">Promover palestras e debates sobre racismo. </p><br/>
+		</div>
+		<div class="card">
+			 <h3 id="h32">Representatividade e valorização <br/><i class="fa-solid fa-arrow-down"></i></h3>
+			 <p id="p3">Apoiar negócios e artistas negros. </p>
+			 <p id="p4">Exigir mais diversidade na mídia, publicidade e entretenimento. </p>
+			 <br/>
+		</div>
+		<div class="card">
+			 <h3 id="h33">Práticas no dia a dia <br/> <i class="fa-solid fa-arrow-down"></i></h3>
+			 <p id="p5">Evitar expressões e piadas racistas. </p>
+			 <p id="p6">Ser um aliado: ouvir, dar espaço e amplificar vozes negras. </p>
+		</div>
+		</div>
+		<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+		<div class="mapa">
+		<br/>
+		<h2 class="end" id="h21"><i class="fa-solid fa-house"></i> Nosso Endereço</h2>
+		<br/><br/>
+		<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+		<div id="map"></div>
+		
+		<script src="https://unpkg.com/leaflet/dist/leaflet.js">
+		</script>
+		<script>
+		//Função para criar uma página
+		function showMap(latitude,longitude){
+			//Cria o mapa com a localização atual
+			var map = L.map('map').setView([latitude,longitude],13);
+			
+			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{attribution:'Openstreetmap'}).addTo(map);
+			
+			//Adiciona o pin da localização
+			L.marker([latitude,longitude]).addTo(map).bindPopup('Estamos aqui se precisar! :)').openPopup();
+		}
+		//Função para obter a localização atual
+		function getLocation(){
+			if(navigator.geolocation){
+			
+			navigator.geolocation.getCurrentPosition(
+				function(position){
+					var latitude = position.coords.latitude;
+					var longitude = position.coords.longitude;
+					showMap(latitude,longitude);
+					},function(error){
+					alert("Erro");
+				});
+			}
+			else{ alert("Localização não suportada!");}
+		}
+		getLocation();
+		</script>
+		</div>
+		<br/><br/><br/>
+		<div>
+			<h2 class="equip" id="h22">Nossa Equipe</h2>
+			<table>
+				<tr>
+					<td id="tdimg"><img src="analiviaa.jpg" class="imgs"></td>
+					<td id="tdimg"><img src="ju.jpg" class="imgs"></td>
+					<td id="tdimg"><img src="eu.jpg" class="imgs"></td>
+					<td id="tdimg"><img src="poliane.jpg" class="imgs"></td>
+				</tr>
+				<tr>
+					<td class="nome"><a class="a_nome" href="https://www.instagram.com/anazsilvah/" target="_blank"><i class="fa-brands fa-instagram"></i> Ana Lívia </a></td>
+					<td class="nome"><a class="a_nome" href="https://www.instagram.com/jupuelcher/" target="_blank"><i class="fa-brands fa-instagram"></i> Júlia</a></td>
+					<td class="nome"><a class="a_nome" href="https://www.instagram.com/mafeh_kluiz/" target="_blank"><i class="fa-brands fa-instagram"></i> Maria Fernanda</a></td>
+					<td class="nome"><a class="a_nome" href="https://www.instagram.com/pollyg.m/" target="_blank"><i class="fa-brands fa-instagram"></i> Poliane</a></td>
+				</tr>
+			</table>
+		</div>
+		<br/>
+	</hr>
+		<div class="referencia">
+			<br/>
+			<h3 id="h34">Nossas fontes de pesquisa para realizar o Raízes da Luta</h3>
+			<br/>
+			<a class="ref" href="Referências Bibliográficas - Raízes da Luta.pdf" target="_blank" id="ref1"><i class="fa-solid fa-book"></i>  Referências Bibliográficas</a>
+			<br/><br/>
+		</div>
+	<br/>
+	<div class="acessibilidade">
+		<h1 tabindex="0" id="acessibilidade"> Acessibilidade</h1>
+		<button id="contraste-btn" aria-label="Alterar Contraste"> Alto Contraste</button>
+		<button id="modo-leitura-btn" aria-label="Modo Leitura"> Modo Leitura</button>
+		<button id="aumentar-fonte-btn" aria-label="Aumentar Fonte"> Aumentar Fonte</button>
+		<button id="diminuir-fonte-btn" aria-label="Diminuir Fonte"> Diminuir Fonte</button>
+		<button id="ler-conteudo-btn" aria-label="Ler Conteúdo"> Ler Conteúdo</button>
+		<button onclick="mudarIdioma('en')">English</button>
+		<button onclick="mudarIdioma('pt')">Português</button><br/><br/>
+	</div>
+	<footer>
+		<div class="rodape">
+			<p><b id="rodape">© SESI/SENAI 2025. Todos os direitos reservados.</b></p>
+		</div>
+	</footer>
+	</body>
+</html>
+	<script>
+	//Alterar o contraste
+	document.getElementById('contraste-btn').addEventListener('click', function(){
+		document.body.classList.toggle('alto-contraste');
+		atitudes = document.getElementsByClassName('card');
+		for(card of atitudes){
+			card.classList.toggle('alto-contraste');
+		}
+		rodapee = document.getElementsByClassName('rodape');
+		for(rodape of rodapee){
+			rodape.classList.toggle('alto-contraste');
+		}
+		nomes = document.getElementsByClassName('nome');
+		for(nome of nomes){
+			nome.classList.toggle('alto-contraste');
+		}
+		mapaa = document.getElementsByClassName('mapa');
+		for(mapa of mapaa){
+			mapa.classList.toggle('alto-contraste');
+		}
+		as = document.getElementsByClassName('a_nome');
+		for(a of as){
+			if(a.style.color == ""){
+				a.style.color = "yellow";
+			}
+			else if(a.style.color == "yellow"){
+				a.style.color = "black";
+			}
+			else if(a.style.color == "black"){
+				a.style.color = "yellow";
+			}
+		}
+		referencia = document.getElementsByClassName('ref');
+		for(ref of referencia){
+			if(ref.style.color == ""){
+				ref.style.color = "yellow";
+			}
+			else if(ref.style.color == "yellow"){
+				ref.style.color = "black";
+			}
+			else if(ref.style.color == "black"){
+				ref.style.color = "yellow";
+			}
+		}
+		ref = document.getElementsByClassName('referencia');
+		for(referencia of ref){
+			referencia.classList.toggle('alto-contraste');
+		}
+	});
+	
+	//Modo Leitura
+	document.getElementById('modo-leitura-btn').addEventListener('click', function(){
+		document.body.classList.toggle('modo-leitura');});
+		
+	//Aumentar fonte
+	document.getElementById('aumentar-fonte-btn').addEventListener('click',function(){
+	document.body.classList.add('aumentar-fonte');
+	document.body.classList.remove('diminuir-fonte')
+	;})
+	//Dimniuir Fonte
+	document.getElementById('diminuir-fonte-btn').addEventListener('click',function(){
+	document.body.classList.add('diminuir-fonte');
+	document.body.classList.remove('aumentar-fonte')
+	;})
+	//Teclado virtual
+	function addKey(letra){
+		document.getElementById('resultado').innerText += letra;
+	}
+	//Ler conteúdo da Página
+	document.getElementById('ler-conteudo-btn').addEventListener('click', function(){
+		const texto = document.body.innerText;
+		const falante = new SpeechSynthesisUtterance(texto);
+		falante.lang = 'pt-BR';
+		falante.volume = 1;
+		falante.rate = 1;
+		falante.pitch = 1;
+		speechSynthesis.speak(falante);
+	});
+	</script>
+	<!--Tradução-->
+	<script>
+		const traducoes = {
+			"pt": {
+				"sobre_livro": "Sobre o Livro",
+				"resenha": "Resenha",
+				"criticas": "Críticas",
+				"autora": "Sobre a Autora",
+				"sobre_nos": "Sobre Nós",
+				"vest": "Vestibular",
+				"titulo1": "Possíveis Atitudes Antirracistas",
+				"h31": "Educação e Conscientização",
+				"p1": "Ler e divulgar obras sobre racismo e história afrodescendente.",
+				"p2": "Promover palestras e debates sobre racismo.",
+				"h32": "Representatividade e valorização",
+				"p3": "Apoiar negócios e artistas negros.",
+				"p4": "Exigir mais diversidade na mídia, publicidade e entretenimento.",
+				"h33": "Práticas no dia a dia",
+				"p5": "Evitar expressões e piadas racistas.",
+				"p6": "	Ser um aliado: ouvir, dar espaço e amplificar vozes negras.",
+				"h21": "Nosso Endereço",
+				"h22": "Nossa Equipe",
+				"h34": "Referências",
+				"ref1": "Referências Bibliográficas",
+				"acessibilidade": "Acessibilidade", 
+				"contraste-btn": "Alterar Contraste", 
+				"modo-leitura-btn": "Modo Leitura", 
+				"aumentar-fonte-btn": "Aumentar Fonte", 
+				"diminuir-fonte-btn": "Diminuir Fonte", 
+				"ler-conteudo-btn": "Ler Conteúdo", 
+				"rodape": "© SESI/SENAI 2025. Todos os direitos reservados.",
+			},
+			"en": {
+				"sobre_livro": "About the Book",
+				"resenha": "Review",
+				"criticas": "Criticism",
+				"autora": "About the Author",
+				"sobre_nos": "About Us",
+				"vest": "Entrance Exam",
+				"titulo1": "Possible Antiracist Attitudes",
+				"h31": "Education and Awareness",
+				"p1": "Read and promote works about racism and Afro-descendant history.",
+				"p2": "Promote lectures and debates about racism.",
+				"h32": "Representation and Appreciation",
+				"p3": "Support Black-owned businesses and artists.",
+				"p4": "Demand more diversity in media, advertising, and entertainment.",
+				"h33": "Daily Practices",
+				"p5": "Avoid racist expressions and jokes.",
+				"p6": "Be an ally: listen, give space, and amplify Black voices.",
+				"h21": "Our Address",
+				"h22": "Our Team",
+				"h34": "References",
+				"ref1": "Bibliographical References",
+				"acessibilidade": "Accessibility",
+				"contraste-btn": "Toggle Contrast",
+				"modo-leitura-btn": "Reading Mode",
+				"aumentar-fonte-btn": "Increase Font Size",
+				"diminuir-fonte-btn": "Decrease Font Size",
+				"ler-conteudo-btn": "Read Content",
+				"rodape": "© SESI/SENAI 2025. All rights reserved."
+			}
+		}
+		function mudarIdioma(idioma){
+			document.getElementById("sobre_livro").innerText = traducoes[idioma].sobre_livro;
+			document.getElementById("resenha").innerText = traducoes[idioma].resenha;
+			document.getElementById("criticas").innerText = traducoes[idioma].criticas;
+			document.getElementById("autora").innerText = traducoes[idioma].autora;
+			document.getElementById("sobre_nos").innerText = traducoes[idioma].sobre_nos;
+			document.getElementById("vest").innerText = traducoes[idioma].vest;
+			document.getElementById("titulo1").innerText = traducoes[idioma].titulo1;
+			document.getElementById("h31").innerText = traducoes[idioma].h31;
+			document.getElementById("p1").innerText = traducoes[idioma].p1;
+			document.getElementById("p2").innerText = traducoes[idioma].p2;
+			document.getElementById("h32").innerText = traducoes[idioma].h32;
+			document.getElementById("p3").innerText = traducoes[idioma].p3;
+			document.getElementById("p4").innerText = traducoes[idioma].p4;
+			document.getElementById("h33").innerText = traducoes[idioma].h33;
+			document.getElementById("p5").innerText = traducoes[idioma].p5;
+			document.getElementById("p6").innerText = traducoes[idioma].p6;
+			document.getElementById("h21").innerText = traducoes[idioma].h21;
+			document.getElementById("h22").innerText = traducoes[idioma].h22;
+			document.getElementById("h34").innerText = traducoes[idioma].h34;
+			document.getElementById("acessibilidade").innerText = traducoes[idioma].acessibilidade;
+			document.getElementById("contraste-btn").innerText = traducoes[idioma]["contraste-btn"];
+			document.getElementById("modo-leitura-btn").innerText = traducoes[idioma]["modo-leitura-btn"];
+			document.getElementById("aumentar-fonte-btn").innerText = traducoes[idioma]["aumentar-fonte-btn"];
+			document.getElementById("diminuir-fonte-btn").innerText = traducoes[idioma]["diminuir-fonte-btn"];
+			document.getElementById("ler-conteudo-btn").innerText = traducoes[idioma]["ler-conteudo-btn"];
+			document.getElementById("rodape").innerText = traducoes[idioma].rodape;
+		}
+	</script>
